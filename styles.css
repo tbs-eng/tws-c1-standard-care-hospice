@@ -1,4 +1,4 @@
-/* Standard Care Hospice — styles v1 · evolved from Webflow staging design
+/* Standard Care Hospice — styles v5 · evolved from Webflow staging design
    Tokens: peach/cream warmth · charcoal ink · deep green action · rounded headings
    Accessibility: 18px base, 1.6 leading, 48px tap targets, AA contrast */
 :root {
@@ -28,6 +28,7 @@ img { max-width:100%; display:block; }
 .brand { text-decoration:none; color:var(--ink); line-height:1.1; }
 .brand strong { font-family:'Quicksand',sans-serif; font-size:1.15rem; display:block; }
 .brand span { font-size:.7rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft); }
+.brand img { height:52px; display:block; }
 nav.main { display:flex; gap:16px; flex-wrap:wrap; margin-left:auto; }
 nav.main a { color:var(--ink); text-decoration:none; font-size:.95rem; font-weight:600; padding:12px 2px; }
 nav.main a:hover, nav.main a[aria-current] { color:var(--green); }
@@ -45,6 +46,14 @@ nav.main a:hover, nav.main a[aria-current] { color:var(--green); }
 .hero { background:linear-gradient(160deg, var(--charcoal), #3A3F45); color:#fff; text-align:center;
   padding:84px 20px; position:relative; }
 .hero.photo-slot { background:linear-gradient(160deg,#2E3238,#4A4237); }
+.hero.hero-photo { background:
+  radial-gradient(120% 105% at 50% 42%, rgba(15,20,15,.62) 30%, rgba(15,20,15,.72) 72%, rgba(15,20,15,.88) 100%),
+  url('assets/hero-home.webp') center/cover no-repeat; }
+.band.photo-fade { background:url('assets/hero-services-faded.webp') center/cover no-repeat; }
+.band.photo-fade.pf-careers { background-image:url('assets/careers-faded.webp'); }
+.band.photo-fade.pf-contact { background-image:url('assets/contact-faded.webp'); }
+.band.photo-fade.pf-groceries { background-image:url('assets/groceries-faded.webp'); }
+.team-photo { border-radius:10px; margin:1.2rem 0; width:100%; }
 .hero .eyebrow { color:var(--peach); }
 .hero h1 { color:#fff; margin-bottom:.7rem; }
 .hero p.lead { font-size:1.2rem; max-width:640px; margin:0 auto 1.5rem; color:#EDE6DA; }
