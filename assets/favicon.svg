@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"><rect width="140" height="140" rx="24" fill="#FFFFFF"/><g transform="translate(-24,4)"><g>
+  <path d="M14 96 C34 122 118 130 190 108" fill="none" stroke="#5FAE3F" stroke-width="9" stroke-linecap="round"/>
+  <path d="M38 52 L74 22 L110 52 L98 52 L98 96 L50 96 L50 52 Z" fill="#5FAE3F"/>
+  <g stroke="#5FAE3F" stroke-width="2.4" stroke-linecap="round" fill="none"><path d="M 26 96 q -3.0 -6.0 -6.5 -8.0"/><path d="M 26 96 q -1.0 -8.0 -1.5 -11.0"/><path d="M 26 96 q 1.5 -8.0 3.0 -10.5"/><path d="M 26 96 q 4.0 -5.5 7.0 -7.0"/></g>
+  <g stroke="#5FAE3F" stroke-width="2.04" stroke-linecap="round" fill="none"><path d="M 37 96 q -2.55 -5.1 -5.5249999999999995 -6.8"/><path d="M 37 96 q -0.85 -6.8 -1.275 -9.35"/><path d="M 37 96 q 1.275 -6.8 2.55 -8.924999999999999"/><path d="M 37 96 q 3.4 -4.675 5.95 -5.95"/></g>
+  <circle cx="95" cy="31.0" r="9.0" fill="#1E4D2B"/><path d="M 82.8 25.3 A 13.5 13.5 0 1 0 107.2 25.3 C 117.0 40.0, 109.0 70.0, 97.0 92.0 Q 95.0 95.0 93.0 92.0 C 81.0 70.0, 73.0 40.0, 82.8 25.3 Z" fill="#1E4D2B"/><path d="M 89.5 49.0 v 4.0 q 0 5.0 4.5 5.0 q 4.5 0 4.5 -5.0 v -4.0" fill="none" stroke="#F2C40F" stroke-width="2.2" stroke-linecap="round"/><path d="M 94.0 58.0 v 4.0 q 0 4.5 4.5 5.0" fill="none" stroke="#F2C40F" stroke-width="2.2" stroke-linecap="round"/><circle cx="100.3" cy="67.5" r="3.0" fill="none" stroke="#F2C40F" stroke-width="2.2"/>
+  <circle cx="125" cy="42.2" r="7.2" fill="#F2C40F"/><path d="M 115.2 37.6 A 10.8 10.8 0 1 0 134.8 37.6 C 142.6 49.4, 136.2 73.4, 126.6 91.0 Q 125.0 93.4 123.4 91.0 C 113.8 73.4, 107.4 49.4, 115.2 37.6 Z" fill="#F2C40F"/>
+</g></g></svg>
