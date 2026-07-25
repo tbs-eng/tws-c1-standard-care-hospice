@@ -1,4 +1,4 @@
-/* Standard Care Hospice — styles v5 · evolved from Webflow staging design
+/* Standard Care Hospice — styles v6 · evolved from Webflow staging design
    Tokens: peach/cream warmth · charcoal ink · deep green action · rounded headings
    Accessibility: 18px base, 1.6 leading, 48px tap targets, AA contrast */
 :root {
@@ -41,6 +41,9 @@ nav.main a:hover, nav.main a[aria-current] { color:var(--green); }
 .langs { font-size:.85rem; color:var(--ink-soft); }
 .langs a { text-decoration:none; font-weight:700; }
 .langs .soon { color:#b9b0a2; }
+.nav-toggle { position:absolute; opacity:0; width:1px; height:1px; }
+.burger { display:none; }
+.nav-toggle:focus-visible ~ .burger { outline:2px solid var(--green); outline-offset:3px; border-radius:6px; }
 
 /* Hero */
 .hero { background:linear-gradient(160deg, var(--charcoal), #3A3F45); color:#fff; text-align:center;
@@ -118,4 +121,19 @@ footer .phone-big { font-size:1.15rem; font-weight:700; color:#fff; }
   h1 { font-size:2rem; }
   .founder { grid-template-columns:1fr; text-align:center; }
   .founder .photo { margin:0 auto; }
+  /* mobile menu */
+  .burger { display:flex; flex-direction:column; justify-content:center; gap:5px; margin-left:auto;
+    width:48px; height:48px; padding:10px 11px; cursor:pointer; }
+  .burger span { display:block; width:26px; height:3px; background:var(--ink); border-radius:2px;
+    transition:transform .3s ease, opacity .25s ease; }
+  .nav-toggle:checked ~ .burger span:nth-child(1) { transform:translateY(8px) rotate(45deg); }
+  .nav-toggle:checked ~ .burger span:nth-child(2) { opacity:0; }
+  .nav-toggle:checked ~ .burger span:nth-child(3) { transform:translateY(-8px) rotate(-45deg); }
+  nav.main { display:none; flex-basis:100%; flex-direction:column; gap:0; margin-left:0;
+    border-top:1px solid var(--line); padding-top:6px; }
+  nav.main a { padding:14px 4px; border-bottom:1px solid var(--line); font-size:1.05rem; }
+  .nav-toggle:checked ~ nav.main { display:flex; }
+  .topbar .btn-call { display:none; }
+  .topbar .langs { display:none; }
+  .nav-toggle:checked ~ .langs { display:block; flex-basis:100%; padding:10px 4px 4px; }
 }
