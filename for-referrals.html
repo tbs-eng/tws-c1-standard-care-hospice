@@ -42,6 +42,9 @@
 <form action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value="b6c9931b-9fd9-431a-91f3-35f3d5069fc6">
   <input type="hidden" name="subject" value="New referral — standardcarehospice.com">
+  <input type="hidden" name="redirect" id="w3-redirect" value="https://standardcarehospice.com/thank-you.html">
+  <script>/* keeps the thank-you redirect correct on the preview host AND after launch */
+  document.getElementById("w3-redirect").value = location.origin + location.pathname.replace(/[^/]*$/, "") + "thank-you.html";</script>
   <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
   <p><label for="r-name" style="display:block;font-size:.85rem;color:#575D65;margin-bottom:2px">Your name &amp; role</label><input id="r-name" name="name" required autocomplete="name" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
   <p><label for="r-org" style="display:block;font-size:.85rem;color:#575D65;margin-bottom:2px">Organization</label><input id="r-org" name="organization" autocomplete="organization" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>

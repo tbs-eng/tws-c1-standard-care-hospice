@@ -37,6 +37,9 @@
 <form action="https://api.web3forms.com/submit" method="POST" style="max-width:520px">
   <input type="hidden" name="access_key" value="b6c9931b-9fd9-431a-91f3-35f3d5069fc6">
   <input type="hidden" name="subject" value="Website message — standardcarehospice.com">
+  <input type="hidden" name="redirect" id="w3-redirect" value="https://standardcarehospice.com/thank-you.html">
+  <script>/* keeps the thank-you redirect correct on the preview host AND after launch */
+  document.getElementById("w3-redirect").value = location.origin + location.pathname.replace(/[^/]*$/, "") + "thank-you.html";</script>
   <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
   <p><label for="c-name" style="display:block;font-size:.85rem;color:#575D65;margin-bottom:2px">Your name</label><input id="c-name" name="name" required autocomplete="name" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
   <p><label for="c-phone" style="display:block;font-size:.85rem;color:#575D65;margin-bottom:2px">Phone</label><input id="c-phone" name="phone" type="tel" required autocomplete="tel" placeholder="Best number to reach you" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
