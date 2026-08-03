@@ -43,10 +43,10 @@
   <input type="hidden" name="access_key" value="b6c9931b-9fd9-431a-91f3-35f3d5069fc6">
   <input type="hidden" name="subject" value="New referral — standardcarehospice.com">
   <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-  <p><input name="name" required placeholder="Your name &amp; role" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
-  <p><input name="organization" placeholder="Organization" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
-  <p><input name="phone" required placeholder="Callback phone" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
-  <p><input name="email" type="email" placeholder="Email (optional)" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
+  <p><label for="r-name" style="display:block;font-size:.85rem;color:#575D65;margin-bottom:2px">Your name &amp; role</label><input id="r-name" name="name" required autocomplete="name" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
+  <p><label for="r-org" style="display:block;font-size:.85rem;color:#575D65;margin-bottom:2px">Organization</label><input id="r-org" name="organization" autocomplete="organization" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
+  <p><label for="r-phone" style="display:block;font-size:.85rem;color:#575D65;margin-bottom:2px">Callback phone</label><input id="r-phone" name="phone" type="tel" required autocomplete="tel" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
+  <p><label for="r-email" style="display:block;font-size:.85rem;color:#575D65;margin-bottom:2px">Email (optional)</label><input id="r-email" name="email" type="email" autocomplete="email" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
   <button class="btn btn-call" type="submit" style="border:none;cursor:pointer;width:100%">Request a callback</button>
   <p style="font-size:.8rem;color:#575D65;margin-top:6px">Please don't include medical details here — send clinical information by fax, or call.</p>
 </form></div>

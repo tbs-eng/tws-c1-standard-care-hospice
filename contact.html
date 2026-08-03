@@ -38,9 +38,10 @@
   <input type="hidden" name="access_key" value="b6c9931b-9fd9-431a-91f3-35f3d5069fc6">
   <input type="hidden" name="subject" value="Website message — standardcarehospice.com">
   <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-  <p><input name="name" required placeholder="Your name" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
-  <p><input name="phone" required placeholder="Phone" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
-  <p><textarea name="message" rows="3" placeholder="How can we help?" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></textarea></p>
+  <p><label for="c-name" style="display:block;font-size:.85rem;color:#575D65;margin-bottom:2px">Your name</label><input id="c-name" name="name" required autocomplete="name" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
+  <p><label for="c-phone" style="display:block;font-size:.85rem;color:#575D65;margin-bottom:2px">Phone</label><input id="c-phone" name="phone" type="tel" required autocomplete="tel" placeholder="Best number to reach you" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
+  <p><label for="c-email" style="display:block;font-size:.85rem;color:#575D65;margin-bottom:2px">Email (optional)</label><input id="c-email" name="email" type="email" autocomplete="email" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></p>
+  <p><label for="c-message" style="display:block;font-size:.85rem;color:#575D65;margin-bottom:2px">How can we help?</label><textarea id="c-message" name="message" rows="3" style="width:100%;padding:10px;margin:4px 0;border:1px solid #E6DFD4;border-radius:6px"></textarea></p>
   <button class="btn btn-call" type="submit" style="border:none;cursor:pointer">Send</button>
   <p style="font-size:.8rem;color:#575D65;margin-top:6px">Or email <a href="mailto:contact@standardcarehospice.com">contact@standardcarehospice.com</a> — calling is always fastest.</p>
 </form>
