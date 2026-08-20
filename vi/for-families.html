@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TR5BGF9BY4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TR5BGF9BY4');
+</script>
+<script>
+  /* Phone-call conversion. tel: clicks are NOT covered by Enhanced measurement, and on a
+     24/7 hospice the call IS the conversion. Records which of the two PUBLISHED numbers
+     was tapped - never a visitor's number, and nothing typed into any form. */
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (link && typeof gtag === 'function') {
+      gtag('event', 'phone_call_click', {
+        phone_number: link.getAttribute('href').replace('tel:', ''),
+        page_path: location.pathname
+      });
+    }
+  });
+</script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dành cho gia đình — Standard Care Hospice</title>
 <meta name="robots" content="noindex">
